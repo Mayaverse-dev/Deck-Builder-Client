@@ -141,23 +141,13 @@ export default function ArenaCardViewer({
       const deck = JSON.parse(sessionStorage.getItem("deck") || "[]");
       console.log(deck.length);
       const cardIndex1 = deck.findIndex(
-        (card: ICard) => card.cardId === card.cardId
+        (c: ICard) => c.cardId === card.cardId
       );
       deck.splice(cardIndex1, 1);
       console.log(deck.length);
       sessionStorage.setItem("deck", JSON.stringify(deck));
       toast.success("Card removed from deck!");
-      setCards((prevCards) => {
-        const cardIndex = prevCards.findIndex(
-          (c) => c.cardId === card.cardId && c.copy === 1
-        );
-        if (cardIndex !== -1) {
-          const newCards = [...prevCards];
-          newCards.splice(cardIndex, 1);
-          return newCards;
-        }
-        return prevCards;
-      });
+      setCards(deck);
       setReload(!reload);
     }
   }
