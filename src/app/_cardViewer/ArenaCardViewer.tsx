@@ -70,7 +70,7 @@ export default function ArenaCardViewer({
       setCards(uniqueCardsArray);
     } else {
       axios
-        .get("https://yuyutsu-api.vercel.app/cards/type/Arena")
+        .get("https://yuyutsu-deckbuilder-api.vercel.app/cards/type/Arena")
         .then((res) => {
           const chars = {
             nairvi: "NEIR",

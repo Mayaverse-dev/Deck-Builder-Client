@@ -69,7 +69,7 @@ export default function ActionCardViewer({
       setCards(uniqueCardsArray);
     } else {
       axios
-        .get("https://yuyutsu-api.vercel.app/cards/type/Action")
+        .get("https://yuyutsu-deckbuilder-api.vercel.app/cards/type/Action")
         .then((res) => {
           const chars = {
             nairvi: "NEIR",

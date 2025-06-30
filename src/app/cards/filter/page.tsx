@@ -76,7 +76,7 @@ export default function Home() {
   }, [isLoaded, isSignedIn, router]);
   useEffect(() => {
     axios
-      .get("https://yuyutsu-api.vercel.app/class/all")
+      .get("https://yuyutsu-deckbuilder-api.vercel.app/class/all")
       .then((res) => {
         const arr: { value: string; label: string }[] = [];
         console.log(res.data);
@@ -99,7 +99,7 @@ export default function Home() {
     }
 
     axios
-      .post("https://yuyutsu-api.vercel.app/cards/filter", {
+      .post("https://yuyutsu-deckbuilder-api.vercel.app/cards/filter", {
         maxCost,
         type: cardType,
         class: cardClass,
