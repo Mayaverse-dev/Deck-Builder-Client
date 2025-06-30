@@ -142,7 +142,7 @@ export default function ActionCardViewer({
       const deck = JSON.parse(sessionStorage.getItem("deck") || "[]");
         console.log(deck.length);
         const cardIndex1 = deck.findIndex(
-          (card: ICard) => c.cardId === card.cardId
+          (c: ICard) => c.cardId === card.cardId
         );
         deck.splice(cardIndex1, 1);
         console.log(deck.length);
