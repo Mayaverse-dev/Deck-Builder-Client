@@ -55,8 +55,6 @@ export default function Home() {
   />
 
   {/* Spacer to push following content to the right */}
-  <div className="flex-grow" />
-
   <Sheet onOpenChange={(open) => setReload(open)}>
     <SheetTrigger>
       <div className="flex items-center justify-center px-4 py-2 bg-primary text-white rounded-sm transition-colors">
