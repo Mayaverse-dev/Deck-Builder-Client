@@ -1,4 +1,3 @@
-//@ts-nocheck
 "use client";
 import { useAuth } from "@clerk/nextjs";
 import { AppSidebar } from "../../_navComponents/app-sidebar";
