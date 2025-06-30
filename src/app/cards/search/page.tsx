@@ -59,7 +59,7 @@ export default function Home() {
     }
     console.log("searching for: ", search);
     axios
-      .post("http://localhost:5000/cards/search", {
+      .post("https://yuyutsu-api.vercel.app/cards/search", {
         query: search
       })
       .then((res) => {

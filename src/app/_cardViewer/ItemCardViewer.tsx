@@ -71,7 +71,7 @@ export default function ItemCardViewer({
       setCards(uniqueCardsArray);
     } else {
       axios
-        .get("http://localhost:5000/cards/type/Arena")
+        .get("https://yuyutsu-api.vercel.app/cards/type/Arena")
         .then((res) => {
           const chars = {
             nairvi: "NEIR",

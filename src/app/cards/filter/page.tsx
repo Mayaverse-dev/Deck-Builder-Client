@@ -76,7 +76,7 @@ export default function Home() {
   }, [isLoaded, isSignedIn, router]);
   useEffect(() => {
     axios
-      .get("http://localhost:5000/class/all")
+      .get("https://yuyutsu-api.vercel.app/class/all")
       .then((res) => {
         const arr: { value: string; label: string }[] = [];
         console.log(res.data);
@@ -99,7 +99,7 @@ export default function Home() {
     }
 
     axios
-      .post("http://localhost:5000/cards/filter", {
+      .post("https://yuyutsu-api.vercel.app/cards/filter", {
         maxCost,
         type: cardType,
         class: cardClass,
