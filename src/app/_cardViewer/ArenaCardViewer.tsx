@@ -49,7 +49,7 @@ export default function ArenaCardViewer({
         dangsa: "DANG",
       };
       const act = sessionStorage.getItem("activeTeam");
-      const parsed = JSON.parse(act || "[]");
+      const parsed = JSON.parse(act || JSON.stringify({ name: "Prabhakar" }));
       const character: string = parsed.name;
       delete chars[character.toLowerCase() as keyof typeof chars];
       const filteredCards = lCards.filter((card: ICard) => {
