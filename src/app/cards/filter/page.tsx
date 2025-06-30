@@ -217,7 +217,7 @@ export default function Home() {
               <RadioGroupItem
                 value="All Cards"
                 id="r1"
-                onClick={(e) => setType(e.target.value.split(" ")[0])}
+                onClick={(e) => setType((e.target as HTMLInputElement).value.split(" ")[0])}
               />
               <Label htmlFor="r1">All Cards</Label>
             </div>
@@ -225,7 +225,7 @@ export default function Home() {
               <RadioGroupItem
                 value="Action Cards"
                 id="r2"
-                onClick={(e) => setType(e.target.value.split(" ")[0])}
+                onClick={(e) => setType((e.target as HTMLInputElement).value.split(" ")[0])}
               />
               <Label htmlFor="r2">Action Cards</Label>
             </div>
@@ -233,7 +233,7 @@ export default function Home() {
               <RadioGroupItem
                 value="Item Cards"
                 id="r3"
-                onClick={(e) => setType(e.target.value.split(" ")[0])}
+                onClick={(e) => setType((e.target as HTMLInputElement).value.split(" ")[0])}
               />
               <Label htmlFor="r3">Item Cards</Label>
             </div>
@@ -241,7 +241,7 @@ export default function Home() {
               <RadioGroupItem
                 value="Arena Cards"
                 id="r4"
-                onClick={(e) => setType(e.target.value.split(" ")[0])}
+                onClick={(e) => setType((e.target as HTMLInputElement).value.split(" ")[0])}
               />
               <Label htmlFor="r4">Arena Cards</Label>
             </div>
