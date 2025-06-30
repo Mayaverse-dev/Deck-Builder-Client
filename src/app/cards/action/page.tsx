@@ -36,7 +36,7 @@ export default function Home() {
     <SidebarProvider open={openS} onOpenChange={(open) => {setOpenS(open)}}>
       <AppSidebar />
       <SidebarInset>
-      <header className="flex h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12 fixed top-0 z-50 bg-gray-50" style={{width: openS ? "calc(100vw-255px)" : "calc(100vw-47px)" }}>
+      <header className="flex h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12 fixed top-0 z-50 bg-gray-50 w-full">
   <div className="flex items-center gap-2 px-4">
     <SidebarTrigger className="-ml-1" />
     <Separator
