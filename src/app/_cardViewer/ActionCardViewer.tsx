@@ -131,6 +131,8 @@ export default function ActionCardViewer({
       setReload(!reload);
     } else {
       sessionStorage.setItem("deck", JSON.stringify([card]));
+      t.success("Card added to deck!");
+      setReload(!reload);
     }
   }
 
