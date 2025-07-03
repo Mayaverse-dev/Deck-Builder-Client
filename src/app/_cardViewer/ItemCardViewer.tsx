@@ -44,7 +44,7 @@ export default function ItemCardViewer({
   useEffect(() => {
     if (local === true && lCards) {
       const chars = {
-        nairvi: "NEIR",
+        nairavi: "NEIR",
         khazir: "KHZR",
         prabhakar: "PRAB",
         dangsa: "DANG",
